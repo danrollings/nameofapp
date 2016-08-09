@@ -1,3 +1,69 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**Body Elements**/
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Futura, helvetica, sans serif;
+}
+
+h1, {
+	font-size: 4em;
+}
+
+p {
+	font-family: Futura, helvetica, sans serif;
+}
+
+.main {
+	padding-top: 50px;
+
+}
+/**NAV**/
+
+.navbar
+{
+background-color: grey;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1;
+border: none;
+}
+
+
+.navbar a{
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: color 500ms;
+	-webkit-transition: color 500ms;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li a:hover {
+    color: #000;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover{
+    color: #34495e;
+    background-color: #fff;
+}
+
+
+/**FOOTER**/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
