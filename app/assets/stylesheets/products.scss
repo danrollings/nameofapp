@@ -2,14 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-p {
-	font-family: Futura, helvetica, sans serif;
-	margin: 20px 0px!important;
+p{
+	margin: 10px 0px !important;
 }
 
-.product_image {
-	border: 1px solid grey;
-	min-height: 200px;
-	width:200px;
-}
+/**FOOTER**/
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #grey;
+  color: white;
+}
