@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+#search{
+	padding:0.8em;
+	font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px
+  line-height: 18px;
+}
+.button, html input[type=button], input[type=reset], input[type=submit]{
+	color: white;
+	background: none;
+	border:none;
+}
