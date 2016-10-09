@@ -22,10 +22,9 @@
 #search1{
 	color: white;
 	background: none;
-	border:none;
+	border: none;
 }
 .button, html input[type=button], input[type=reset], input[type=submit]{
-	color: white;
 	background: #666;
 	border:none;
 }
