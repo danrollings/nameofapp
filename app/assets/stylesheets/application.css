@@ -24,3 +24,8 @@
 	background: none;
 	border:none;
 }
+.button, html input[type=button], input[type=reset], input[type=submit]{
+	color: white;
+	background: grey;
+	border:none;
+}
