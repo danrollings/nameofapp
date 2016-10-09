@@ -26,6 +26,6 @@
 }
 .button, html input[type=button], input[type=reset], input[type=submit]{
 	color: white;
-	background: grey;
+	background: #666;
 	border:none;
 }
