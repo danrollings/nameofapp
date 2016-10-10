@@ -13,7 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-.button, html input[type=button], input[type=reset], input[type=submit]{
-color: #000;
-}
