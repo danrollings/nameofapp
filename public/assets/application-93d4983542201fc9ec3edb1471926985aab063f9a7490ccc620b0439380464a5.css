@@ -253,7 +253,7 @@ p {
   line-height: 18px;
 }
 .button, html input[type=button], input[type=reset], input[type=submit]{
-	color: grey;
+	color: #666;
 	background: none;
 	border:none;
 }
