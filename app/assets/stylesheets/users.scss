@@ -1,0 +1,26 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#user_email {
+	border: 1px solid #666;
+	color: white;
+	background-color: grey;
+}
+#user_password{
+	border: 1px solid #666;
+	color: white;
+	background-color: grey;
+}
+#user_password_confirmation{
+	border: 1px solid #666;
+	color: white;
+	background-color: grey;
+}
+#new_user {
+    display: table;
+    margin: 0 auto;
+}
+.userform{
+    text-align: center;
+}
