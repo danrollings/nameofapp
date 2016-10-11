@@ -59,8 +59,13 @@
         <% end %>
   	</nav>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice %>
+      <div class="alert alert-success" id="alert" role="alert"><%= notice %></div>
+    <% end %>
+
+    <% if alert %>
+      <div class="alert alert-warning" id="alert" role="alert"><%= alert %></div>
+    <% end %>
 
     <div class ="container main">
       <%= yield %>
@@ -73,3 +78,6 @@
     </footer>
   </body>
 </html>
+<script type="text/javascript">
+        $("#alert").delay(4000).fadeOut(4000);
+</script>
