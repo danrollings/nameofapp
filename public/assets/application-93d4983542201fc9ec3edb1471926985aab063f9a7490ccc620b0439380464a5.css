@@ -259,5 +259,26 @@ p {
 }
 .button, html input[type=button], input[type=reset], input[type=submit]{
 color: grey;
-}:none;
+}
+#user_email {
+  border: 1px solid #666;
+  color: white;
+  background-color: grey;
+}
+#user_password{
+  border: 1px solid #666;
+  color: white;
+  background-color: grey;
+}
+#user_password_confirmation{
+  border: 1px solid #666;
+  color: white;
+  background-color: grey;
+}
+#new_user {
+    display: table;
+    margin: 0 auto;
+}
+.userform{
+    text-align: center;
 }
