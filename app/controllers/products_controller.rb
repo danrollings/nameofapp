@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-
+  before_filter :authenticate_user!, only: [:edit, :update, :destroy]
+  load_and_authorize_resource
   # GET /products
   # GET /products.json
 def index
@@ -16,7 +17,7 @@ end
   # GET /products/1
   # GET /products/1.json
   def show
-      @comments = Comment.all.paginate(page: params[:page], per_page: 3)
+    @comments = @product.comments.order("created_at DESC").paginate(page: params[:page], per_page: 3)
   end
 
   # GET /products/new
