@@ -9,18 +9,18 @@ def create
         format.html { redirect_to @product, notice: 'Review was created successfully.' }
         format.json { render :show, status: :created, location: @product }
       else
-        format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
+        format.html { redirect_to @product, alert: 'Review was not saved successfully. Please include comment and rating' }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
       end
     end
   end
 
-	def destroy
-    @comment = Comment.find(params[:id])
-    product = @comment.product
-    @comment.destroy
-    redirect_to product
-	end
+def destroy
+  @comment = Comment.find(params[:id])
+  product = @comment.product
+  @comment.destroy
+  redirect_to product, notice: 'Review was deleted successfully.'
+end
 
 	private
 
