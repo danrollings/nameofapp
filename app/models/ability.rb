@@ -10,5 +10,4 @@ class Ability
     is user.admin?
       can :destroy, Comment
     end
-  end
 end
