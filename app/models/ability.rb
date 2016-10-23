@@ -7,7 +7,7 @@ class Ability
     can :read, :all
     can :manage, Product
 
-    is user.admin?
+    if user.admin?
       can :destroy, Comment
     end
 end
