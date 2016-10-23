@@ -49,7 +49,7 @@
 <hr>
 <h3 class="comment-title">Top Review</h3></br>
 <p><%= @product.highest_rating_comment.body %></p>
-<p>Rating: <%= @product.highest_rating_comment.rating %>/5</p>
+<div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
 </br>
     <h4>More Reviews</h4></br>
     <%= render :partial => "comments" %>
