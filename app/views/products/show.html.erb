@@ -27,8 +27,10 @@
     </p>
     <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> 
     </p>
+    <% if signed_in? && current_user.admin? %>
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
+    <% end%>
   </div>
 </div>
 <% if signed_in? %>
@@ -49,8 +51,8 @@
 <% end %>
 <hr>
 <h3 class="comment-title">Top Review</h3></br>
-<%if @product.comments.present?%>
-  <p><%= @product.highest_rating_comment.body %></p>
+<%if @product.highest_rating_comment.present?%>
+  <p><%= @product.highest_rating_comment.body%></p>
   <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
   </br>
     <h4>More Reviews</h4></br>
