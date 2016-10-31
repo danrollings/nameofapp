@@ -4,7 +4,7 @@ describe Product do
 	 context "when the product has comments" do
 	 	before do
 	 		@product = Product.create!(name: "Columbian")
-	 		@user = User.create!(email: "Dan@Dan.com", password: "password1")
+	 		@user = User.create!(email: "D4an@Dan.com", password: "password1")
 	 		@product.comments.create!(rating: 1, user: @user, body: "Rubbish Coffee")
 	 		@product.comments.create!(rating: 3, user: @user, body: "OK")
 	 		@product.comments.create!(rating: 5, user: @user, body: "Great!")
