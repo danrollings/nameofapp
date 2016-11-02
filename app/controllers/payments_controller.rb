@@ -12,13 +12,12 @@ class PaymentsController < ApplicationController
 			:source => token,
 			:description => params[:stripeEmail]
 			)
-
 			redirect_to product_path(@product), notice: 'Thank you for your payment'
 
 			  if charge.paid
 			  	Order.create(				
 			  		:product_id => @product,
-						:user_id => @user,
+			  		:user_id => @user,
 						:total => @product.price
 						)
   			end
@@ -30,7 +29,6 @@ class PaymentsController < ApplicationController
    		err = body[:error]
    		flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
   	end
-  	redirect_to product_path(@product)
 
 	end
 
