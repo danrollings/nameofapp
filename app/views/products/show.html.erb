@@ -11,6 +11,8 @@
       <h3><%= @product.name %></h3>
     </p>
     <%= form_tag "/payments/create" do %>
+      <!-- Hidden field to pass info to params/payments controller-->
+      <%= hidden_field_tag(:product_id, @product.id) %>
       <%= render partial: "shared/stripe_checkout_button" %>
     <% end %>
 
