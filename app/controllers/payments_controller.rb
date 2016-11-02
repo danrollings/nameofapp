@@ -7,13 +7,13 @@ class PaymentsController < ApplicationController
   	# Create the charge on Stripe's servers - this will charge the user's card
   		begin
     		charge = Stripe::Charge.create(
-      		:amount => @product.price*100, # amount in cents, again
-      		:currency => "gbp",
-      		:source => token,
-      		:description => params[:stripeEmail]
-    		)
+			:amount => @product.price.to_i*100, # amount in cents, again
+			:currency => "gbp",
+			:source => token,
+			:description => params[:stripeEmail]
+			)
 
-			redirect_to product_path(@product) notice: 'Thank you for your payment'
+			redirect_to product_path(@product), notice: 'Thank you for your payment'
 
 			  if charge.paid
 			  	Order.create(				
@@ -30,7 +30,7 @@ class PaymentsController < ApplicationController
    		err = body[:error]
    		flash[:error] = "Unfortunately, there was an error processing your payment: #{err[:message]}"
   	end
-  	redirect_to product_path(product)
+  	redirect_to product_path(@product)
 
 	end
 
