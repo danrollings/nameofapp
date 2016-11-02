@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :registrations => "user_registrations" }
-    resources :products do
+  resources :products do
     resources :comments 
   end
+
   resources :users
-  
+
+  post 'payments/create'
+
   get 'static_pages/about'
 
   get 'static_pages/contact'

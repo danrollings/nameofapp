@@ -4,15 +4,18 @@ class ProductsController < ApplicationController
   load_and_authorize_resource
   # GET /products
   # GET /products.json
-def index
-  @products = Product.all
-  if params[:q]
-    search_term = params[:q]
-    @products = Product.where("name Like ?", "%#{search_term}%")
-  else
-    @products = Product.all
+  def index
+    if params[:q]
+      search_term = params[:q]
+      if Rails.env == "development"
+        @products = Product.where("name LIKE ?", "%#{search_term}%")
+      else
+        @products = Product.where("name ilike ?", "%#{search_term}%")
+      end
+    else
+      @products = Product.all
+    end
   end
-end
 
   # GET /products/1
   # GET /products/1.json
@@ -72,7 +75,7 @@ end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
-      @product = Product.find(params[:id])
+      #@product = Product.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
