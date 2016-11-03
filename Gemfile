@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem "brakeman", :require => false
 
 gem 'rails-controller-testing'
 
