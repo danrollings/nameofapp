@@ -28,3 +28,11 @@
 background-color: white;
 }
 
+.thumbnail{
+	margin-bottom: 0px;
+}
+
+.zoomContainer{
+	margin-top: 4px;
+	margin-left: 4px;
+}

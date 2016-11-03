@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-xs-12 col-s-12 col-md-6 col-l-6">
     <a href="#" class="thumbnail">
-      <%= image_tag (@product.image_url)%>
+      <%= image_tag(@product.image_url, class: "thumbnail img-zoom", data_zoom_image: "#{@product.image_url}") %>
     </a>
   </div>
 
@@ -22,8 +22,8 @@
     </p>
 
     <p>
-      <strong>Image url:</strong></br>
-      <%= @product.image_url %>
+      <!--<strong>Image url:</strong></br>
+      <%= @product.image_url %> -->
     </p>
 
     <p>

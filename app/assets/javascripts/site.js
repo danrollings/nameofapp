@@ -6,8 +6,12 @@ $(document).on('turbolinks:load', function(){
         return $(this).attr('data-score');
       }
     });
+
+    $(".img-zoom").elevateZoom({
+  		zoomType: "inner",
+  		cursor: "crosshair"
 });
 
-$(document).on('turbolinks:load', function(){
-	$("#alert").delay(4000).fadeOut(2000);
+    $("#alert").delay(4000).fadeOut(2000);
 });
+
