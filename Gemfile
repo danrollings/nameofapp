@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "brakeman", :require => false
+
 gem 'rails-controller-testing'
 
 gem 'cancancan', '~> 1.10'
@@ -26,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'stripe'
+
+gem 'byebug', platform: :mri
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -36,7 +40,6 @@ gem 'stripe'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
   gem 'rspec-rails', '~> 3.5'
