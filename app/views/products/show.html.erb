@@ -31,7 +31,7 @@
 	   £<%= @product.price %>
     </p>
     
-    <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> 
+    <p>Average Rating: <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> 
     </p>
     <% if signed_in? && current_user.admin? %>
     <%= link_to 'Edit', edit_product_path(@product) %> |
@@ -39,22 +39,11 @@
     <% end%>
   </div>
 </div>
+
 <% if signed_in? %>
-  <h4>Add a review:</h4>
-  <%= form_for([@product, @product.comments.build]) do |f| %>
-    <p>
-      <%= f.label :body, "Comments" %>
-      <%= f.text_area :body %>
-    </p>
-         <%= f.label :rating, "Rating" %>
-     <p>
-    <div class="rating"></div>
-  </p>
-    <p>
-      <%= f.submit "Submit" %>
-    </p>
-  <% end %>
+  <%= render 'new_comment' %>
 <% end %>
+
 <hr>
 <h3 class="comment-title">Top Review</h3></br>
 <%if @product.highest_rating_comment.present?%>

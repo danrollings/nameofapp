@@ -1,17 +1,21 @@
-$(document).on('turbolinks:load', function(){
-    $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
-    $('.rated').raty({ path: '/assets',
-      readOnly: true,
-      score: function() {
-        return $(this).attr('data-score');
-      }
-    });
+var refreshRating = function(){ 
+  $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' });
+  $('.rated').raty({ path: '/assets',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+};
 
-    $(".img-zoom").elevateZoom({
-  		zoomType: "inner",
-  		cursor: "crosshair"
-});
+$(document).on('turbolinks:load ajaxSuccess', function(){
+  refreshRating();
 
-    $("#alert").delay(4000).fadeOut(2000);
+  $(".img-zoom").elevateZoom({
+    zoomType: "inner",
+    cursor: "crosshair"
+  });
+
+  $("#alert").delay(4000).fadeOut(2000);
 });
 
