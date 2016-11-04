@@ -8,14 +8,16 @@
 
   <div class="col-xs-12 col-md-6 col-l-6 products-info">
     <p>
+    <% cache @product do %>
+  
       <h3><%= @product.name %></h3>
-    </p>
-    <%= form_tag "/payments/create" do %>
-      <!-- Hidden field to pass info to params/payments controller-->
-      <%= hidden_field_tag(:product_id, @product.id) %>
-      <%= render partial: "shared/stripe_checkout_button" %>
+      </p>
+      <%= form_tag "/payments/create" do %>
+        <!-- Hidden field to pass info to params/payments controller-->
+        <%= hidden_field_tag(:product_id, @product.id) %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
     <% end %>
-
     <p>
       <strong>Description:</strong></br>
       <%= @product.description %>
