@@ -10,33 +10,34 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class ="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
+    <%= f.text_field :image_url, class: "form-control" %>
   </div>
 
-  <div class ="field">
+  <div class="form-group">
     <%= f.label :color %><br>
-    <%= f.text_field :color %>
+    <%= f.text_field :color, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :price %><br>
-    <%= f.text_field :price %>
+    <%= f.text_field :price, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Product", class: "btn btn-default btn-secondary"%>
+  </div>
   </div>
 <% end %>
