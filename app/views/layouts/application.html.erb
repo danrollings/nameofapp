@@ -49,15 +49,15 @@
           <% end %>
         </li>
       </ul>
-      <div id="search">      
-        <%= form_tag("/products", method: "get") do %>
-        <%= text_field_tag (:q) %>
-        <%= submit_tag "SEARCH", :id=> "search1" %>
-      </div>
+        <div class="form-group" id="search">      
+            <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", id: "search-field") do %>
+            <%= text_field_tag(:q, "", class: "form-control") %>
+            <%= submit_tag "SEARCH", class: "btn btn-default btn-secondary", :id=> "search1" %>
+          <% end %>
+        </div>
       </div>
     </div>
-        <% end %>
-  	</nav>
+    </nav>
 
     <% if notice %>
       <div class="alert alert-success" id="alert" role="alert"><%= notice %></div>

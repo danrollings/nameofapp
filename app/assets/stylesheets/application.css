@@ -14,15 +14,19 @@
  *= require_self
  */
 #search{
-  padding:0.8em;
+  padding:0.3em 0.3em 0em 0.3em;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 #search1{
-  color: white;
-  background: none;
-  border: none;
+max-height: 26px;
+padding: 3px 12px;
+
+}
+
+#q{
+max-height: 26px;
 }
 .button, html input[type=button], input[type=reset], input[type=submit]{
 background-color: white;
