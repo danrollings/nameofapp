@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'newrelic_rpm'
+
+gem 'redis-rails'
+
 gem 'dalli'
 
 gem 'rails-controller-testing'
