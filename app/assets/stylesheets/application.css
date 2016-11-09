@@ -44,3 +44,7 @@ background-color: white;
 #fresh_comment{
   background-color: #e1e3e8;
 }
+
+#alert {
+	z-index: 1500;
+}
