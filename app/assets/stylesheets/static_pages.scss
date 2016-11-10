@@ -11,35 +11,42 @@ body{
 
 h1, h2, h3, h4, h5, h6{
 	font-family: Futura, helvetica, sans serif;
+  padding-left: 15px
 }
 
-h1, {
-	font-size: 4em;
+h1{
+ padding: 0 15px 0;
+}
+
+.carousel-title{
+  font-size: 3em;
+  margin-top:0px;
 }
 
 p {
 	font-family: Futura, helvetica, sans serif;
+  padding: 0px 15px;
 }
 
 .main {
-	padding-top: 60px;
-
+	padding-top: 90px;
+  padding-bottom: 20px;
 }
 /**NAV**/
 
 .navbar
 {
-background-color: grey;
+background-color: white;
 position: fixed;
 width: 100%;
 top: 0;
-z-index: 1;
+z-index: 2000;
 border: none;
 }
 
 
 .navbar a{
-	color: #000;
+	color: grey;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	transition: color 500ms;
@@ -47,18 +54,30 @@ border: none;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #fff;
+    color: grey;
 }
 
 .navbar-inverse .navbar-nav>li a:hover {
-    color: #000;
+    color: grey;
 }
 
 .navbar-inverse .navbar-nav>.active>a, 
 .navbar-inverse .navbar-nav>.active>a:focus, 
 .navbar-inverse .navbar-nav>.active>a:hover{
     color: #34495e;
-    background-color: #fff;
+    background-color: grey;
+}
+
+.nav-item{
+font-size: 1.4em;
+}
+
+.navbar-form{
+  margin-top: 4px;
+  border: none;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
 }
 
 /**FOOTER**/
@@ -68,10 +87,12 @@ border: none;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 50px;
-  background-color: grey;
-  text-color: white;
+  height: 60px;
+  background-color: white;
+  color: grey;
   margin: 0px;
+  z-index: 2000;
+  border-top: solid grey 1px;
 }
 .text-muted{
   color: white;
@@ -84,25 +105,47 @@ border: none;
 /**PRODUCT PAGES**/
 
 .product-info{
-  border: 3px solid grey;
-  margin: 2em;
-  padding: 1.4em;
-  min-height: 450px
+   border: 3px solid grey;
+   margin: 1em 0;
+   padding: 0px;
+   max-height: 400px;
+   min-height: 400px;
+  overflow: hidden;
+}
+.product-padding{
+padding-top: 0px;
 }
 
 
 /**LANDING PAGE**/
 .carousel-indicators {
-    bottom: 10px;
+    bottom: 1%;
 }
 .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 60px;
-    font-size: 2em;
+    right: 5%;
+    left: 5%;
+    top: 1%;
+    text-align: left;
+    max-width: 400px;
+    line-height:normal;
 }
 
+.carousel-control{
+  display:none;
+  }
+  .carousel-title{
+  padding:0px;
+  }
+ .carousel-text{
+  padding:0px;
+  }
+
+  ol{
+  margin:0px;
+  }
+
 .carousel-control:focus, .carousel-control:hover {
+
     color: #fff;
     text-decoration: none;
     filter: alpha(opacity=90);

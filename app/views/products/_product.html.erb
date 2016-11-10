@@ -1,11 +1,13 @@
 <div class="col-xs-12 col-sm-6 col-md-4 col-l-3">
   <div class="product-info">
     <% cache product do %>
+    <%= link_to product do %>
       <%= image_tag(product.image_url, class: "img-responsive") %>
-      <h4><%= product.name %></h4>
+      <h3><%= product.name %></h3>
+      <% end %>
+    <p>£<%= product.price %> per 500g</p>
+	<h4>What the experts say . . .</h4>
       <p><%= product.description %></p>
-      <div >£<%= product.price %></div>
     <% end %><!--/cache-->
-      <div><%= link_to 'Show', product %></div>
-  </div><!--/product-info-->
+   </div><!--/product-info-->
 </div><!--/col-->

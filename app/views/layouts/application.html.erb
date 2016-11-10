@@ -18,6 +18,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
+        
           <button type="button" class="navbar-toggle" data-toggle="collapse"
             data-target=".navbar-collapse"> 
 
@@ -30,31 +31,36 @@
         </div>
         <!--end navbar-header-->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+        <div class="logo navbar-right">  
+          <%= image_tag("/assets/Roasting-logo-coffee-ring.png") %>
+        </div>
+          <ul class="nav navbar-nav navbar-left">
+                  
   			<li class="nav-item">
-           <a class="nav-link" href="/static_pages/index">Home</a></li>
-            <li><a class="nav-link" href="/products">Products</a></li>
+           <a class="nav-link" href="/static_pages/landing_page">Home</a>
+        </li>
         <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>
   			<li class="nav-item">
           <a class="nav-link" href="/static_pages/about">About</a></li>
   			<li class="nav-item">
           <a class="nav-link" href="/static_pages/contact">Contact</a></li>
-  		</ul>
-      <ul class="nav navbar-nav pull-right">
-        <li>
+          <li class="nav-item">
           <% if user_signed_in? %>
             <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
           <% else %>
             <%= link_to('Login', new_user_session_path) %>
           <% end %>
         </li>
-      </ul>
-        <div class="form-group" id="search">      
+        <div class="form-group nav-item navbar-nav pull-left" id="search">      
             <%= form_tag("/products", method: "get", class: "navbar-form navbar-left", id: "search-field") do %>
             <%= text_field_tag(:q, "", class: "form-control") %>
             <%= submit_tag "SEARCH", class: "btn btn-default btn-secondary", :id=> "search1" %>
           <% end %>
         </div>
+  		</ul>
+        
       </div>
     </div>
     </nav>
@@ -78,6 +84,3 @@
     </footer>
   </body>
 </html>
-
-
-

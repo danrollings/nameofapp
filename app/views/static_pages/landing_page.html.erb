@@ -1,22 +1,26 @@
-<h2>Featured Products:</h2>
 <% cache do %>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide product-padding" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
-
+<% end %>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
     <div class="item<%= " active" if product == @products.first %>">
       <%= link_to( image_tag(product.image_url), product) %>
       <div class="carousel-caption">
-        <%= product.name %>
-      </div>
+      <h1 class="carousel-title">
+        <%= product.name %></br>
+      </h1>
+      <h4 class="carousel-text">
+        <%= product.description %>
+      </h4>
         </div>
+      </div>
     <% end %>
   </div>
 
@@ -30,5 +34,5 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<% end %>
+
 

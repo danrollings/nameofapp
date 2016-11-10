@@ -14,10 +14,11 @@
  *= require_self
  */
 #search{
-  padding:0.3em 0.3em 0em 0.3em;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  clear:left;
+  margin-left: 0px; 
 }
 #search1{
 max-height: 26px;
@@ -27,6 +28,7 @@ padding: 3px 12px;
 
 #q{
 max-height: 26px;
+margin-bottom: 2px;
 }
 .button, html input[type=button], input[type=reset], input[type=submit]{
 background-color: white;
@@ -46,5 +48,41 @@ background-color: white;
 }
 
 #alert {
-	z-index: 1500;
+	z-index: 2001;
+	border: solid grey 2px;
+	background-color: 	white;
+	color: grey;
+	font-weight: bold;
 }
+
+.alert-info {
+	z-index: 2001;
+	border: solid grey 2px;
+	background-color: 	white;
+	color: grey;
+	font-weight: bold;
+}
+.main {
+    padding-top: 90px;
+    width: 100%;
+}
+.logo{
+    float: right;
+    padding-right: 50px;
+    max-height: 20px;
+}
+
+.new_comment{
+	padding: 0 15px;
+}
+
+.rated{
+	padding: 0 15px;
+}
+
+.product-reviews{
+	padding: 0 15px;
+}
+
+ .contactline
+ {padding-left:0px;}

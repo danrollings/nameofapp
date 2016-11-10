@@ -1,26 +1,22 @@
-<div class="row" data-product-id="<%= @product.id %>">
+<div class="row product-padding" data-product-id="<%= @product.id %>">
   <div class="col-xs-12 col-s-12 col-md-6 col-l-6">
-    <a href="#" class="thumbnail">
+    <a href="#" class="thumbnail ">
       <%= image_tag(@product.image_url, class: "thumbnail img-zoom", data_zoom_image: "#{@product.image_url}") %>
     </a>
   </div>
 
   <div class="col-xs-12 col-md-6 col-l-6 products-info">
-    <p>
+ 
     <% cache @product do %>
-  
-      <h3><%= @product.name %></h3>
-      </p>
+      <h2><%= @product.name %></h2>
       <% end %>
     <p>
       <strong>Description:</strong></br>
       <%= @product.description %>
     </p>
 
-    <p>
       <!--<strong>Image url:</strong></br>
       <%= @product.image_url %> -->
-    </p>
 
     <p>
 	   <strong>Price</strong></br>

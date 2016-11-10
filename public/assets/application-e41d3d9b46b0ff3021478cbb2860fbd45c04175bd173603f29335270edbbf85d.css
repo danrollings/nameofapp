@@ -1,0 +1,516 @@
+/* line 5, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.row {
+  margin: 0px;
+}
+
+/* line 9, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.product-reviews {
+  margin-top: -35px;
+}
+
+/* line 13, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.comment-title {
+  margin-bottom: -15px;
+}
+
+/** PAGINATION**/
+/* line 19, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination {
+  background: grey;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+  width: 100%;
+}
+
+/* line 28, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination a, .apple_pagination span {
+  padding: 0.2em 0.3em;
+}
+
+/* line 32, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination .disabled {
+  color: white;
+}
+
+/* line 36, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination .current {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
+
+/* line 50, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination a {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+/* line 56, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+.pagination a:hover, .pagination a:focus {
+  text-decoration: underline;
+}
+
+/* line 60, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/comments.scss */
+#alert-comment {
+  position: inherit;
+  margin: 0px !important;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/products.scss */
+p {
+  margin: 10px 0px !important;
+}
+
+/**FOOTER**/
+/* line 11, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/products.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #grey;
+  color: white;
+}
+
+/* line 21, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/products.scss */
+.products-info {
+  float: right;
+}
+/* line 1, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: grey;
+  background-color: #000;
+}
+
+/* line 36, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/**Body Elements**/
+/* line 8, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+body {
+  margin: 0px 0px 60px 0px;
+}
+
+/* line 13, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Futura, helvetica, sans serif;
+  padding-left: 15px;
+}
+
+/* line 18, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  padding: 0 15px 0;
+}
+
+/* line 22, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-title {
+  font-size: 3em;
+  margin-top: 0px;
+}
+
+/* line 27, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: Futura, helvetica, sans serif;
+  padding: 0px 15px;
+}
+
+/* line 32, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.main {
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+
+/**NAV**/
+/* line 38, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2000;
+  border: none;
+}
+
+/* line 49, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar a {
+  color: grey;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 500ms;
+  -webkit-transition: color 500ms;
+}
+
+/* line 57, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: grey;
+}
+
+/* line 61, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li a:hover {
+  color: grey;
+}
+
+/* line 65, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #34495e;
+  background-color: grey;
+}
+
+/* line 72, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.nav-item {
+  font-size: 1.4em;
+}
+
+/* line 76, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-form {
+  margin-top: 4px;
+  border: none;
+}
+
+/* line 80, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+/**FOOTER**/
+/* line 86, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: white;
+  color: grey;
+  margin: 0px;
+  z-index: 2000;
+  border-top: solid grey 1px;
+}
+
+/* line 98, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.text-muted {
+  color: white;
+}
+
+/* line 102, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  margin: 0 auto;
+}
+
+/**PRODUCT PAGES**/
+/* line 108, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product-info {
+  border: 3px solid grey;
+  margin: 1em 0;
+  padding: 0px;
+  max-height: 400px;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+/* line 116, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.product-padding {
+  padding-top: 0px;
+}
+
+/**LANDING PAGE**/
+/* line 122, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-indicators {
+  bottom: 1%;
+}
+
+/* line 125, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  right: 5%;
+  left: 5%;
+  top: 1%;
+  text-align: left;
+  max-width: 400px;
+  line-height: normal;
+}
+
+/* line 134, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-control {
+  display: none;
+}
+
+/* line 137, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-title {
+  padding: 0px;
+}
+
+/* line 140, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-text {
+  padding: 0px;
+}
+
+/* line 144, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+ol {
+  margin: 0px;
+}
+
+/* line 148, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/static_pages.scss */
+.carousel-control:focus, .carousel-control:hover {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .1;
+}
+/* line 5, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/users.scss */
+.alert {
+  position: absolute;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  margin: 50px 0 0 !important;
+  z-index: 1500;
+}
+
+/* line 15, /Users/danielrollings/Dropbox/nameofapp/app/assets/stylesheets/users.scss */
+.notice {
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  margin: 50px 0 0 !important;
+  z-index: 1500;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+#search{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  clear:left;
+  margin-left: 0px; 
+}
+#search1{
+max-height: 26px;
+padding: 3px 12px;
+
+}
+
+#q{
+max-height: 26px;
+margin-bottom: 2px;
+}
+.button, html input[type=button], input[type=reset], input[type=submit]{
+background-color: white;
+}
+
+.thumbnail{
+	margin-bottom: 0px;
+}
+
+.zoomContainer{
+	margin-top: 4px;
+	margin-left: 4px;
+}
+
+#fresh_comment{
+  background-color: #e1e3e8;
+}
+
+#alert {
+	z-index: 2001;
+	border: solid grey 2px;
+	background-color: 	white;
+	color: grey;
+	font-weight: bold;
+}
+
+.alert-info {
+	z-index: 2001;
+	border: solid grey 2px;
+	background-color: 	white;
+	color: grey;
+	font-weight: bold;
+}
+.main {
+    padding-top: 90px;
+    width: 100%;
+}
+.logo{
+    float: right;
+    padding-right: 50px;
+    max-height: 20px;
+}
+
+.new_comment{
+	padding: 0 15px;
+}
+
+.rated{
+	padding: 0 15px;
+}
+
+.product-reviews{
+	padding: 0 15px;
+}
+
+ .contactline
+ {padding-left:0px;}
